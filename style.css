@@ -1,0 +1,116 @@
+@font-face {
+    font-family: gilroyRegular;
+    src: url(./fonts/GIlroy/Gilroy-Regular.ttf);
+}
+@font-face {
+    font-family: monument;
+    src: url(./fonts/Monument\ Regular.otf);
+}
+@font-face {
+    font-family: mango;
+    src: url(./fonts/MangoGrotesque-ExtraBold.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    /* cursor: none; */
+}
+body::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+}
+#cursor{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    mix-blend-mode: difference;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%,-50%) scale(0.4);
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0;
+}
+#page1 {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+#webgl-canvas{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#hero{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+#hero nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 2vw;
+}
+#hero nav h1{
+    color: whitesmoke;
+    font-family: gilroyRegular;
+    font-size: 1.6vw;
+    font-weight: bolder;
+}
+#hero nav h1:nth-child(1)
+{
+    text-transform: uppercase;
+}
+#Portfolio{
+    font-family: monument;
+    text-transform: uppercase;
+    font-size: 12vw;
+    color: white;
+    mix-blend-mode: difference;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#sub-heading{
+    font-family: mango;
+    font-size: 5vw;
+    text-transform: capitalize;
+    color: white;
+    mix-blend-mode: exclusion;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+}
+
+
+
+
+#page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: yellow;
+    overflow-x: hidden;
+}
+#page3{
+    height: 100vh;
+    width: 100vw;
+    background-color: green;
+    overflow-x: hidden;
+}
