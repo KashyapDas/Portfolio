@@ -19,7 +19,7 @@ html,body{
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    /* cursor: none; */
+    cursor: none;
 }
 body::-webkit-scrollbar{
     display: none;
@@ -39,6 +39,67 @@ body::-webkit-scrollbar{
     z-index: 9999;
     opacity: 0;
 }
+#black-div{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    overflow: hidden;
+}
+#bar{
+    width: 0%;
+    background-color: black;
+    height: 4px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius : 50px;
+}
+#black-parent{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.black01{
+    height: 100%;
+    width: 20vw;
+    display: flex;
+    align-items: end;
+}
+.black1{
+    height: 0%;
+    width : 100%;
+    background-color: black;
+}
+
+.black02{
+    height: 100%;
+    width: 20vw;
+    display: flex;
+    align-items: start;
+}
+.black2{
+    height: 0%;
+    width: 100%;
+    background-color: black;
+}
+#black-heading{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: gilroyRegular;
+    font-size: 8vw;
+    padding: 2vw;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
 #page1 {
     margin: 0;
     width: 100vw;
