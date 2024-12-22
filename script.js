@@ -14,13 +14,11 @@ Grid2Background(document.getElementById('webgl-canvas'))
 
 // MASK MAGNET USING SHERY JS
 Shery.makeMagnet("#menu", {
-    //Parameters are optional.
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
     duration: 1,
   });
 
 Shery.makeMagnet("#kashyap", {
-    //Parameters are optional.
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
     duration: 1,
   });
@@ -60,6 +58,56 @@ window.addEventListener("load",()=>{
     }
   })
 })
+
+// menu will open when click on menu btn
+const menu = document.querySelector("#menu");
+const icon1 = document.querySelector(".ri-arrow-right-line");
+let menuFlag = false;
+
+menu.addEventListener("click",()=>{
+  if(!menuFlag)
+  {
+    gsap.to("#menuPage",{
+      left : "0%",
+      opacity : 1,
+      duration : 1.5,
+      delay : 0.1,
+      ease : "expo.inOut",
+    })
+    menuFlag = true;
+  }
+})
+
+icon1.addEventListener("click",()=>{
+  if(menuFlag)
+    {
+      gsap.to("#menuPage",{
+        left : "100%",
+        opacity : 0,
+        duration : 1.5,
+        delay : 0.1,
+        ease : "expo.inOut",
+      })
+      menuFlag = false;
+    }
+    console.log("icon1")
+})
+
+icon1.addEventListener('mouseenter', () => {
+  gsap.to(icon1, {
+    scale : 1.02, 
+    duration: 0.3,
+    ease: "power2.out"
+  });
+});
+icon1.addEventListener('mouseleave', () => {
+  gsap.to(icon1, {
+    scale: 1, 
+    duration: 0.3,
+    ease: "power2.out"
+  });
+});
+
 
 
 

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -34,6 +37,22 @@
     
     <div id="cursor"></div>
 
+    <div id="menuPage">
+        <div id="rightMenu">
+            <div class="box"></div>
+        </div>
+        <div id="leftMenu">
+            <i class="ri-arrow-right-line"></i>
+            <div id="menuOptions">
+                <h1 class="optionHover">Home</h1>
+                <h1 class="optionHover">Experience</h1>
+                <h1 class="optionHover">Projects</h1>
+                <h1 class="optionHover">Skills</h1>
+                <h1 class="optionHover">Contact</h1>
+            </div>
+        </div>
+    </div>
+
     <div id="page1">
         <canvas id="webgl-canvas"></canvas>
         <div id="hero">
@@ -52,11 +71,14 @@
 
 
 
-    <div id="page2"></div>
+    <div id="page2">
+    </div>
+
+
     <div id="page3"></div>
+     
 
-
-    <!--  Gsap is needed for Basic Effects -->
+<!--  Gsap is needed for Basic Effects -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
 <!-- Scroll Trigger is needed for Scroll Effects -->
@@ -69,10 +91,12 @@
 <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
 
 <!-- Shery Js -->
-<script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> 
+<script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
 
 
     <!-- My Script -->
     <script type="module" src="script.js"></script>
+    <!-- Menu Three JS Script -->
+    <script type="module" src="script1.js"></script>
 </body>
 </html>
