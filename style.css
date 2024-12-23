@@ -25,6 +25,7 @@ html,body{
     width: 100%;
     overflow-x: hidden;
     cursor: none;
+    position: relative;
 }
 body::-webkit-scrollbar{
     display: none;
@@ -147,18 +148,17 @@ body::-webkit-scrollbar{
     text-transform: uppercase;
     font-size: 12vw;
     color: white;
-    mix-blend-mode: difference;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    
 }
 #sub-heading{
-    font-family: mango;
+    font-family: 'Roboto', sans-serif;
     font-size: 5vw;
     text-transform: capitalize;
     color: white;
-    mix-blend-mode: exclusion;
     position: absolute;
     top: 70%;
     left: 50%;
@@ -171,10 +171,10 @@ body::-webkit-scrollbar{
     z-index: 1000;
     position: absolute;
     top: 0%;
-    left: 105%;
+    left: 100%;
     display: flex;
     background-color: black;
-    opacity: 0;
+    opacity: 100;
 }
 #rightMenu{
     height: 100%;
@@ -189,8 +189,6 @@ body::-webkit-scrollbar{
     position: relative;
     border-radius: 7px;
     overflow: hidden;
-    background-color: transparent;
-    mix-blend-mode: difference;
 }
 #rightMenu .box canvas {
     width: 100% !important;
@@ -250,64 +248,65 @@ body::-webkit-scrollbar{
         display: none;
     }
     body{
+        overflow-x: hidden;
         cursor: pointer;
     }
     #Portfolio {
         font-size: 11vw;
-        mix-blend-mode: normal;
         color: white;
-        text-shadow: 0 0 10px rgba(210, 2, 2, 0.8),
-                     0 0 20px rgba(181, 0, 0, 0.8),
-                     0 0 30px rgba(134, 0, 0, 0.8),
-                     0 0 40px rgba(100, 0, 0, 0.6);
-        animation: glow 2s ease-in-out infinite alternate;
-    }
-    @keyframes glow {
-        from {
-            text-shadow: 0 0 10px rgba(255, 0, 0, 0.8),
-                         0 0 20px rgba(212, 0, 0, 0.8),
-                         0 0 30px rgba(147, 0, 0, 0.8),
-                         0 0 40px rgba(101, 0, 0, 0.6);
-        }
-        to {
-            text-shadow: 0 0 10px rgba(255, 0, 0, 0.8),
-                         0 0 20px rgba(212, 0, 0, 0.8),
-                         0 0 30px rgba(147, 0, 0, 0.8),
-                         0 0 40px rgba(101, 0, 0, 0.6);
-        }
+        text-shadow: 0 0 10px rgb(0, 0, 0),
+                     0 0 20px rgba(0, 0, 0),
+                     0 0 30px rgba(0, 0, 0),
+                     0 0 40px rgba(0, 0, 0);
     }
     #sub-heading {
         white-space: nowrap;
         font-size: 7vw;
         font-family: 'Roboto', sans-serif;
         font-weight: bolder;
-        mix-blend-mode: normal;
         color: whitesmoke;
         position: absolute;
         top: 58%;
         left: 50%;
         transform: translate(-50%, -58%);
-        text-shadow: 0 0 8px rgba(255, 0, 0, 0.7),
-                     0 0 15px rgba(177, 0, 0, 0.7),
-                     0 0 25px rgba(114, 0, 0, 0.7);
-        animation: subheading-glow 2.5s ease-in-out infinite alternate;
-    }
-    @keyframes subheading-glow {
-        from {
-            text-shadow: 0 0 8px rgba(255, 0, 0, 0.7),
-                         0 0 15px rgba(192, 0, 0, 0.7),
-                         0 0 25px rgba(160, 0, 0, 0.7);
-        }
-        to {
-            text-shadow: 0 0 12px rgba(255, 0, 0, 0.8),
-                         0 0 20px rgba(192, 1, 1, 0.8),
-                         0 0 30px rgba(160, 0, 0, 0.8);
-        }
-    }
-    #hero nav h1{
-        font-size: 6vw;
-    }
-    .name{
-        display: none;
-    }
+        text-shadow: 0 0 8px rgba(0, 0, 0),
+                     0 0 15px rgba(0, 0, 0),
+                     0 0 25px rgba(0, 0, 0);
+}
+#hero nav h1{
+    font-size: 6vw;
+}
+.name{
+    display: none;
+}
+#menuPage{
+    flex-direction: column;    
+    overflow: hidden;
+}
+#rightMenu{
+    height: 50vh;
+    width: 100%;
+}
+#rightMenu .box{
+    height: 70%;
+    width: 70%;
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+}
+#rightMenu .box canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+#leftMenu{
+    height: 50vh;
+    width: 100%;
+}
+#leftMenu .ri-arrow-right-line{
+    font-size: 5vh;
+}
+#menuOptions h1{
+    font-size: 6.3vh;
+}
+
 }

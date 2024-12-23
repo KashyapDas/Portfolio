@@ -65,6 +65,7 @@ const icon1 = document.querySelector(".ri-arrow-right-line");
 let menuFlag = false;
 
 menu.addEventListener("click",()=>{
+  document.querySelector("body").style.overflow = "hidden";
   if(!menuFlag)
   {
     gsap.to("#menuPage",{
@@ -79,6 +80,7 @@ menu.addEventListener("click",()=>{
 })
 
 icon1.addEventListener("click",()=>{
+  document.querySelector("body").style.overflowY = "auto"
   if(menuFlag)
     {
       gsap.to("#menuPage",{
