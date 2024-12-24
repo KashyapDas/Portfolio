@@ -24,7 +24,7 @@ html,body{
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    cursor: none;
+    /* cursor: none; */
     position: relative;
 }
 body::-webkit-scrollbar{
@@ -37,7 +37,7 @@ body::-webkit-scrollbar{
     border-radius: 50%;
     background-color: whitesmoke;
     mix-blend-mode: difference;
-    position: absolute;
+    position: fixed;
     top: 0%;
     left: 0%;
     transform: translate(-50%,-50%) scale(0.4);
@@ -223,22 +223,59 @@ body::-webkit-scrollbar{
     font-family: gilroyRegular;
     font-size: 5vw;
 }
-
-
-
-
 #page2{
     height: 100vh;
     width: 100vw;
-    background-color: whitesmoke;
-    overflow-x: hidden;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
 }
+#leftPage2{
+    width: 50vw;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#leftPage2 h1{
+    width: 80%;
+    font-family: gilroyRegular;
+    font-size: 2.4vw;
+    font-weight: 700;
+    color: rgba(250, 235, 215, 0.441);
+}
+#leftPage2 h1 span{
+    opacity: 0.1;
+}
+#rightPage2{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images{
+    width: 90%;
+    height: 60%;
+    border-radius: 7px;
+}
+.images img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
 #page3{
     height: 100vh;
     width: 100vw;
     background-color: green;
     overflow-x: hidden;
 }
+
+
 
 
 @media (max-width : 639px) {
@@ -271,46 +308,75 @@ body::-webkit-scrollbar{
                      0 0 15px rgba(0, 0, 0),
                      0 0 25px rgba(0, 0, 0);
 }
-#hero nav h1{
-    font-size: 6vw;
-}
-.name{
-    display: none;
-}
-#menuPage{
-    flex-direction: column;    
-    overflow: hidden;
-}
-#rightMenu{
-    height: 40vh;
-    width: 100%;
-}
-#rightMenu .box{
-    display: hidden;
-}
-#rightMenu .box2{
-    display: block;
-    height: 90%;
-    width: 65%;
-}
-#leftMenu{
-    height: 60vh;
-    width: 100%;
-}
-#leftMenu .ri-arrow-right-line{
-    font-size: 5vh;
-}
-#menuOptions{
-    width: 100%;
-    height: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: end;
-    row-gap: 1vw;
-}
-#menuOptions h1{
-    font-size: 6vh;
-}
+    #hero nav h1{
+        font-size: 6vw;
+    }
+    .name{
+        display: none;
+    }
+    #menuPage{
+        flex-direction: column;    
+        overflow: hidden;
+    }
+    #rightMenu{
+        height: 40vh;
+        width: 100%;
+    }
+    #rightMenu .box{
+        display: hidden;
+    }
+    #rightMenu .box2{
+        display: block;
+        height: 90%;
+        width: 65%;
+    }
+    #leftMenu{
+        height: 60vh;
+        width: 100%;
+    }
+    #leftMenu .ri-arrow-right-line{
+        font-size: 5vh;
+    }
+    #menuOptions{
+        width: 100%;
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: end;
+        row-gap: 1vw;
+    }
+    #menuOptions h1{
+        font-size: 6vh;
+    }
+    #page2{
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    #leftPage2{
+        width: 100%;
+        height: 50vh;
+    }
+    #leftPage2 h1{
+        width: 95%;
+        font-size: 2.6vh;
+        color: antiquewhite;
+    }
+    #leftPage2 h1 span{
+        opacity: 1;
+    }
+    #rightPage2{
+        width: 100%;
+        height: 50vh;
+    }
+    .images{
+        width: 90%;
+        height: 80%;
+        border-radius: 7px;
+    }
 
 }

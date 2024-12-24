@@ -22,6 +22,7 @@ Shery.makeMagnet("#kashyap", {
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
     duration: 1,
   });
+
 // gsap implementation for black screen animation
 const tl = gsap.timeline();
 window.addEventListener("load",()=>{
@@ -94,7 +95,7 @@ icon1.addEventListener("click",()=>{
     }
     console.log("icon1")
 })
-
+// Icon Scale animation 
 icon1.addEventListener('mouseenter', () => {
   gsap.to(icon1, {
     scale : 1.02, 
@@ -110,4 +111,39 @@ icon1.addEventListener('mouseleave', () => {
   });
 });
 
+// Page 2 Summary Animation using Scroll Trigger
+
+// breaking the h1 content into span. 
+let page2Heading  = document.querySelector(".page2Heading");
+const clutter = page2Heading.textContent.split("");
+page2Heading.textContent = "";
+for(let i=0; i<clutter.length; i++)
+{
+  const span = document.createElement("span");
+  span.textContent = clutter[i];
+  page2Heading.appendChild(span);
+}
+
+gsap.to("#leftPage2 h1 span",{
+    color : "antiquewhite",
+    opacity : 1,
+    stagger : 0.1,
+    scrollTrigger : {
+      trigger : "#leftPage2 h1 ",
+      scroller : "body",
+      // markers : true,
+      start : "top 50%",
+      end : "top 25%",
+      scrub : 1,
+    }
+});
+
+// Page2 right side image effect
+Shery.imageEffect(".images", {
+  style: 1,
+  scrollSnapping: true,
+  scrollSpeed: 6,
+  touchSpeed: 6,
+  damping: 7,
+});
 
