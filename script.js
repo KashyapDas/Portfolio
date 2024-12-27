@@ -252,3 +252,20 @@ $(document).ready(function () {
     };
   });
 });
+
+
+// disable the inspect screen for the security purpose
+
+// Disable right-click option 
+document.addEventListener('contextmenu', function(event) {
+  event.preventDefault();
+});
+
+// Disable F12 and other shortcuts for DevTools
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'F12' || 
+      (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'C')) || 
+      (event.ctrlKey && event.key === 'U')) {
+      event.preventDefault();
+  }
+});
