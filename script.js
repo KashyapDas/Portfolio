@@ -95,6 +95,19 @@ icon1.addEventListener("click",()=>{
     }
     console.log("icon1")
 })
+// menu animation on click the menu's button
+  const menus = document.querySelectorAll(".optionHover");
+  let targetSection;
+  menus.forEach((menu)=>{
+    menu.addEventListener("click",()=>{
+      menuFlag = false;
+      gsap.to("#menuPage",{
+        left : "100%",
+        opacity : 0,
+        ease : "expo.inOut",
+      })
+    })
+  })  
 // Icon Scale animation 
 icon1.addEventListener('mouseenter', () => {
   gsap.to(icon1, {
@@ -239,6 +252,3 @@ $(document).ready(function () {
     };
   });
 });
-
-
-// Page 5 animation

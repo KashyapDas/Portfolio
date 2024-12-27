@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Loader page -->
     <div id="black-div">
         <div id="bar"></div>
         <div id="black-parent">
@@ -35,9 +36,9 @@
             <h1>Welcome</h1>
         </div>
     </div>
-    
+    <!-- Custom Cursor -->
     <div id="cursor"></div>
-
+    <!-- Menu Bar -->
     <div id="menuPage">
         <div id="rightMenu">
             <div class="box"></div>
@@ -46,15 +47,25 @@
         <div id="leftMenu">
             <i class="ri-arrow-right-line"></i>
             <div id="menuOptions">
-                <h1 class="optionHover">Home</h1>
-                <h1 class="optionHover">Experience</h1>
-                <h1 class="optionHover">Projects</h1>
-                <h1 class="optionHover">Skills</h1>
-                <h1 class="optionHover">Contact</h1>
+                <h1  class="optionHover">
+                    <a href="#page1">Home</a>
+                </h1>
+                <h1 id="KashyapEx" class="optionHover">
+                    <a href="#page2">Experience</a>
+                </h1>
+                <h1 class="optionHover">
+                    <a href="#page3">Projects</a>
+                </h1>
+                <h1 class="optionHover">
+                    <a href="#page4">Skills</a>
+                </h1>
+                <h1 class="optionHover">
+                    <a href="#page5" id="Contact">Contact</a>
+                </h1>
             </div>
         </div>
     </div>
-
+    <!-- Home Page -->
     <div id="page1">
         <canvas id="webgl-canvas"></canvas>
         <div id="hero">
@@ -70,9 +81,7 @@
             <h2 id="sub-heading">Software Developer</h2>
         </div>
     </div>
-
-
-
+    <!-- Experience Page -->
     <div id="page2">
         <div id="leftPage2">
             <h1 class="page2Heading">Versatile full-stack engineer with expertise in modern web technologies, specializing in creating seamless user experiences through React.js and cutting-edge animation libraries. Proficient in Node.js backend architecture and multiple databases. Strong computer science fundamentals with DSA mastery. Known for innovative problem-solving and staying ahead of tech trends.</h1>
@@ -85,8 +94,7 @@
             </div>
         </div>
     </div>
-
-
+    <!-- Projects Page -->
     <div id="page3">
         <div class="video-container">
             <video playsinline autoplay muted loop>
@@ -285,7 +293,7 @@
             </ul>
         </div>
     </div>
-     
+    <!-- Skills Page -->
     <div id="page4">
 
         <h1>Skills</h1>
@@ -306,7 +314,7 @@
 
 
     </div>
-
+    <!-- Contact Page -->
     <div id="page5">
         <div id="page5Top">
             <div class="top1">
