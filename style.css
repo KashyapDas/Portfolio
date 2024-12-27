@@ -410,8 +410,8 @@ video {
 }
 
 .anime-list .redirect-link a {
-    width: 30px;
-    height: 30px;
+    width: 3vw;
+    height: 3vw;
     margin: 0px auto;
     display: flex;
     display: -webkit-flex;
@@ -572,6 +572,33 @@ video {
         width: 90%;
         height: 80%;
         border-radius: 7px;
+    }
+    #page3{
+        min-height: 140vh;
+        height: fit-content;
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+        /* background-color: darkblue; */
+    }
+    .anime-list .title {
+        font-size: 14vw;
+    }
+    .anime-list .index span{
+        font-size: 5vw;
+        color: white;
+    }
+    .anime-list .anime-name h2{
+        font-size: 5vw;
+        color: white;
+    }
+    .anime-list .genere span{
+        font-size: 5vw;
+        color: white;
+    }
+    .anime-list .redirect-link a {
+        width: 6vw;
+        height: 6vw;
     }
 
 }
