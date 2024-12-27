@@ -132,8 +132,8 @@ gsap.to("#leftPage2 h1 span",{
       trigger : "#leftPage2 h1 ",
       scroller : "body",
       // markers : true,
-      start : "top 50%",
-      end : "top 25%",
+      start : "top 90%",
+      end : "top 10%",
       scrub : 1,
     }
 });
