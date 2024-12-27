@@ -232,13 +232,14 @@ body::-webkit-scrollbar{
 }
 
 #menuOptions h1{
+    color: #fff !important;
     font-family: gilroyRegular;
     font-size: 5vw;
     text-decoration: none;
 }
 
 #menuOptions h1 a{
-    color: white;
+    color: white !important;
     text-decoration: none;
 }
 
